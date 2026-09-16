@@ -529,11 +529,11 @@ def main():
             print(json.dumps({"config": config, "data_dir": str(root),
                               "tracked_sessions": len(list((root / "sessions").glob("*.json")))}, ensure_ascii=False))
             return 0
-        binary = find_claude(config["claude_bin"])
         backend = TranscriptBackend()
         if args.command == "doctor":
-            result = doctor(binary, root, config, backend, args.session, args.transcript)
+            result = doctor(find_claude(config["claude_bin"]), root, config, backend, args.session, args.transcript)
         else:
+            # 先解析会话再找可执行文件：缺会话 ID 的提示不应被「未找到 Claude」掩盖；lock/unlock 不需要模型。
             session_id = valid_id(args.session) if is_worker else resolve_session(args.session_id)
             transcript = args.transcript
             if args.command in ("lock", "unlock"):
@@ -549,6 +549,7 @@ def main():
                     atomic_json(path, state)
                     result = {"status": args.command, "title": state["last_seen_title"]}
             else:
+                binary = find_claude(config["claude_bin"])
                 result = process_thread(
                     backend, lambda context: limited_title(binary, root, config, context,
                         before_model=lambda: ensure_title_active(session_id, root)),
