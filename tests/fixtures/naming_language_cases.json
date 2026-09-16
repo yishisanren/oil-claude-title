@@ -1,0 +1,508 @@
+[
+  {
+    "id": "英文单轮需求",
+    "context": {
+      "current_title": "Hello",
+      "project_hint": "",
+      "original_goal": "Fix expired email verification codes during signup.",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Fix expired email verification codes during signup."
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "verification",
+        "expir"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$"
+    }
+  },
+  {
+    "id": "中文旧标题迁移英文",
+    "context": {
+      "current_title": "🧩 邮箱验证码｜过期修复",
+      "project_hint": "",
+      "original_goal": "Fix the email verification expiry bug.",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Fix the email verification expiry bug."
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Add coverage for expired verification codes."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Keep the same expiry fix scope and run the tests."
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "verification",
+        "expir"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$"
+    }
+  },
+  {
+    "id": "英文旧标题迁移中文",
+    "context": {
+      "current_title": "🧩 Email verification｜Fix expiry",
+      "project_hint": "",
+      "original_goal": "修复邮箱验证码过期的问题。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "修复邮箱验证码过期的问题。"
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "messages": [
+            {
+              "role": "user",
+              "text": "补充验证码过期的回归用例。"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "messages": [
+            {
+              "role": "user",
+              "text": "检查过期边界，保持邮箱验证码修复这个范围。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "邮箱",
+        "过期"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "[\\u3400-\\u9fff]"
+    }
+  },
+  {
+    "id": "英文请求中文助手",
+    "context": {
+      "current_title": "讨论事情",
+      "project_hint": "",
+      "original_goal": "Fix duplicate Stripe webhook deliveries.",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Fix duplicate Stripe webhook deliveries."
+            },
+            {
+              "role": "assistant",
+              "text": "我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。我们会修复 Stripe 回调重复处理的问题。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "Stripe"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$"
+    }
+  },
+  {
+    "id": "英文请求长中文引用",
+    "context": {
+      "current_title": "你好",
+      "project_hint": "",
+      "original_goal": "Fix Stripe webhook retries. Here is the quoted incident report, not my instructions:\n> 支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Fix Stripe webhook retries. Here is the quoted incident report, not my instructions:\n> 支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。支付回调重复触发，导致重复发货。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "Stripe"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$"
+    }
+  },
+  {
+    "id": "中文请求英文代码日志",
+    "context": {
+      "current_title": "Hello",
+      "project_hint": "",
+      "original_goal": "排查 React 登录表单的验证问题。下面是代码和日志：\n```js\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\n```",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "排查 React 登录表单的验证问题。下面是代码和日志：\n```js\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\nconsole.error(\"Validation failed for email input\");\n```"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "React",
+        "登录"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "[\\u3400-\\u9fff]"
+    }
+  },
+  {
+    "id": "英文用户翻译中文资料",
+    "context": {
+      "current_title": "讨论文章",
+      "project_hint": "",
+      "original_goal": "Translate this Chinese setup guide into English:\n> 安装依赖，然后启动应用，检查连接状态。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Translate this Chinese setup guide into English:\n> 安装依赖，然后启动应用，检查连接状态。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "guide"
+      ],
+      "reject": [],
+      "emoji": "📝",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$"
+    }
+  },
+  {
+    "id": "日文单轮需求",
+    "context": {
+      "current_title": "Hello",
+      "project_hint": "",
+      "original_goal": "ログイン画面の余白と入力欄の配置を改善してください。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "ログイン画面の余白と入力欄の配置を改善してください。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "ログイン"
+      ],
+      "reject": [],
+      "emoji": "🎨",
+      "title_pattern": "[\\u3040-\\u30ff]"
+    }
+  },
+  {
+    "id": "西班牙文单轮需求",
+    "context": {
+      "current_title": "Hello",
+      "project_hint": "",
+      "original_goal": "Corrige el error de caducidad del código de verificación del correo.",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Corrige el error de caducidad del código de verificación del correo."
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "verificaci",
+        "caduc"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "[áéíóúñ]"
+    }
+  },
+  {
+    "id": "中文偶尔英文不切换",
+    "context": {
+      "current_title": "🧩 邮箱验证码｜过期修复",
+      "project_hint": "",
+      "original_goal": "修复邮箱验证码过期的问题。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "修复邮箱验证码过期的问题。"
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "messages": [
+            {
+              "role": "user",
+              "text": "补充过期边界测试。"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Please also test the expiry edge case."
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "keep",
+      "contains": [
+        "邮箱",
+        "过期"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "exact_title": "🧩 邮箱验证码｜过期修复"
+    }
+  },
+  {
+    "id": "英文偶尔中文不切换",
+    "context": {
+      "current_title": "🧩 Email verification｜Fix expiry",
+      "project_hint": "",
+      "original_goal": "Fix expired email verification codes.",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Fix expired email verification codes."
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Add tests for expired verification codes."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "messages": [
+            {
+              "role": "user",
+              "text": "再检查一下过期边界。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "keep",
+      "contains": [
+        "verification",
+        "expir"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$",
+      "exact_title": "🧩 Email verification｜Fix expiry"
+    }
+  },
+  {
+    "id": "英文不被早期中文目标覆盖",
+    "context": {
+      "current_title": "🧩 邮箱验证码｜过期修复",
+      "project_hint": "",
+      "original_goal": "修复邮箱验证码过期的问题。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Fix expired email verification codes."
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Include a test for expired codes."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Check the verification expiry boundary."
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "verification",
+        "expir"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$"
+    }
+  },
+  {
+    "id": "中文混合技术名词",
+    "context": {
+      "current_title": "讨论事情",
+      "project_hint": "",
+      "original_goal": "修复 clip-helper 的 React 字幕面板，避免 API 返回空数据后崩溃。",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "修复 clip-helper 的 React 字幕面板，避免 API 返回空数据后崩溃。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "rename",
+      "contains": [
+        "clip-helper"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "[\\u3400-\\u9fff]"
+    }
+  },
+  {
+    "id": "英文语言均衡保持",
+    "context": {
+      "current_title": "🧩 Email verification｜Fix expiry",
+      "project_hint": "",
+      "original_goal": "Add coverage for expired email verification codes.",
+      "recent_turns": [
+        {
+          "id": "0",
+          "messages": [
+            {
+              "role": "user",
+              "text": "Add coverage for expired email verification codes."
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "messages": [
+            {
+              "role": "user",
+              "text": "补充邮箱验证码过期的边界测试。"
+            }
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "action": "keep",
+      "contains": [
+        "verification",
+        "expir"
+      ],
+      "reject": [],
+      "emoji": "🧩",
+      "title_pattern": "^(?!.*[\\u3400-\\u9fff])[^｜]*[A-Za-z][^｜]*｜[A-Za-z][\\x20-\\x7e]*$",
+      "exact_title": "🧩 Email verification｜Fix expiry"
+    }
+  }
+]

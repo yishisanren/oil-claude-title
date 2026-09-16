@@ -1,0 +1,18 @@
+{
+  "name": "oil-claude-title",
+  "version": "0.1.0",
+  "description": "每轮对话结束后，用独立的轻量模型按用户的主要交流语言维护稳定的 emoji 会话标题。移植自 oil-oil/oil-codex-title（MIT）。",
+  "author": {
+    "name": "oil（原作）· Claude Code 移植"
+  },
+  "homepage": "https://github.com/yishisanren/oil-claude-title",
+  "license": "MIT",
+  "keywords": [
+    "session",
+    "title",
+    "rename",
+    "stop-hook",
+    "productivity"
+  ],
+  "repository": "https://github.com/yishisanren/oil-claude-title"
+}

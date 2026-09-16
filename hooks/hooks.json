@@ -1,0 +1,17 @@
+{
+  "description": "每轮结束后在后台用独立模型检查会话标题，只追加标题元数据，不向对话注入内容。",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/oil_claude_title.py\" hook",
+            "async": true,
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

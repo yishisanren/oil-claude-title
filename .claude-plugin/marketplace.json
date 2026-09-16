@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oil-claude-title",
+  "owner": {
+    "name": "oil"
+  },
+  "plugins": [
+    {
+      "name": "oil-claude-title",
+      "description": "让 Claude Code 会话标题跟上讨论内容：Stop Hook 在后台用 haiku 生成「类别 emoji + 对象｜目标」标题。",
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/yishisanren/oil-claude-title"
+    }
+  ],
+  "description": "oil-claude-title：让 Claude Code 会话标题跟上讨论内容。"
+}

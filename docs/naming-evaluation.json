@@ -1,0 +1,489 @@
+{
+  "model": "haiku",
+  "effort": "low",
+  "thinking": false,
+  "cases": 30,
+  "passed": 29,
+  "model_cases": 29,
+  "median_seconds": 9.02,
+  "total_cost_usd": 0.3187,
+  "notice": "确定性问候过滤与 headless 命名的合成案例单次检查，不代表普遍准确率，也不验证侧边栏显示。",
+  "results": [
+    {
+      "case": "问候转需求",
+      "action": "rename",
+      "title": "📝 Skill 盘点｜按用途分类",
+      "reason": "问候后出现具体需求，采用盘点并分类 Skill 作为主线。迁移为标准格式：对象为 Skill，目标为按用途分类。",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.87,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 531,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4334,
+        "total_cost_usd": 0.011326
+      }
+    },
+    {
+      "case": "项目甲注册",
+      "action": "rename",
+      "title": "🧩 邮箱注册｜验证码提交失败定位",
+      "reason": "补充缺失的「｜」分隔符，突出具体的故障现象；用户需求从排查升级为定位注册失败原因。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.51,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 569,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4327,
+        "total_cost_usd": 0.011502
+      }
+    },
+    {
+      "case": "项目乙注册",
+      "action": "rename",
+      "title": "🧩 邮箱注册｜验证码过期修复",
+      "reason": "旧标题缺少「｜」分隔符，不符合结构。依据最新需求确定对象为邮箱注册、目标为验证码过期修复。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.39,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 579,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4328,
+        "total_cost_usd": 0.011554
+      }
+    },
+    {
+      "case": "同项目不同模块",
+      "action": "rename",
+      "title": "🧩 支付回调｜处理逻辑修复",
+      "reason": "当前标题过于模糊，缺少具体对象。新标题明确指向支付回调处理的修复工作，与最新需求对应。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.13,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 601,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4317,
+        "total_cost_usd": 0.011642
+      }
+    },
+    {
+      "case": "提交不是新目标",
+      "action": "keep",
+      "title": "🧩 邮箱注册｜修复",
+      "reason": "标题结构正确，主线准确。测试和推送是修复工作的验证与部署步骤，不改变持续目标。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.3,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 650,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4384,
+        "total_cost_usd": 0.012021
+      }
+    },
+    {
+      "case": "解释不是新目标",
+      "action": "keep",
+      "title": "🧩 支付回调｜幂等修复",
+      "reason": "标题已符合结构。近期用户要求解释幂等概念后继续修复，说明幂等修复是持续主线，不是临时步骤。保持原标题。",
+      "passed": true,
+      "errors": [],
+      "seconds": 4.39,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 157,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4359,
+        "total_cost_usd": 0.009506
+      }
+    },
+    {
+      "case": "持续新主线",
+      "action": "rename",
+      "title": "🎬 Orion 对比视频｜脚本规划",
+      "reason": "用户多轮持续制作Orion视频，从选题→结构→精简脚本，已转向视频制作。旧标题仅记录九月日程，无关现状。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.39,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 587,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4391,
+        "total_cost_usd": 0.01172
+      }
+    },
+    {
+      "case": "视频标题不是任务名",
+      "action": "rename",
+      "title": "🎬 Orion 评测视频｜标题策划",
+      "reason": "旧标题缺少对象和结构。用户当前工作是为Orion图像模型评测视频改标题、生成版本。用模型名+视频主题作对象，标题策划为目标。",
+      "passed": true,
+      "errors": [],
+      "seconds": 11.62,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 688,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4336,
+        "total_cost_usd": 0.012115
+      }
+    },
+    {
+      "case": "外层项目不重复",
+      "action": "rename",
+      "title": "🧩 登录页验证码按钮｜修复无响应",
+      "reason": "原标题缺少明确对象。用户指出登录页验证码按钮无响应的具体问题，调整为对象+目标结构。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.71,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 641,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4322,
+        "total_cost_usd": 0.011852
+      }
+    },
+    {
+      "case": "内容仓库不是主角",
+      "action": "rename",
+      "title": "🎬 Orion 图像模型｜人像一致性对比",
+      "reason": "补全对象（Orion 图像模型）和持续目标（人像一致性对比），按视频选题的核心工作内容调整标题结构",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.66,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 450,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4321,
+        "total_cost_usd": 0.010895
+      }
+    },
+    {
+      "case": "准确标题保持",
+      "action": "keep",
+      "title": "🎨 登录表单｜设计",
+      "reason": "当前标题已符合结构规范，对象\"登录表单\"和持续目标\"设计\"准确。补充优化间距和报错提示是该设计工作的进展，不改变主线。",
+      "passed": true,
+      "errors": [],
+      "seconds": 3.85,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 159,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4319,
+        "total_cost_usd": 0.009436
+      }
+    },
+    {
+      "case": "准确正文补类别",
+      "action": "rename",
+      "title": "🎨 登录表单｜设计",
+      "reason": "补充标准分隔符；用户讨论间距和报错提示属设计工作，持续目标为设计，不因阶段细节改名",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.13,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 433,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4313,
+        "total_cost_usd": 0.010794
+      }
+    },
+    {
+      "case": "仅有问候",
+      "action": "keep",
+      "title": "回应中文问候",
+      "reason": "只有问候或确认，缺少新的命名依据",
+      "passed": true,
+      "errors": [],
+      "seconds": 0.0,
+      "usage": {}
+    },
+    {
+      "case": "仅有继续",
+      "action": "keep",
+      "title": "🧩 注册校验｜修复",
+      "reason": "用户\"继续\"表示继续现有工作，无新目标。标题结构正确，对象与目标准确。",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.84,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 466,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4307,
+        "total_cost_usd": 0.010947
+      }
+    },
+    {
+      "case": "相对日期去歧义",
+      "action": "rename",
+      "title": "🔎 Maple 设计岗位｜调研匹配经验",
+      "reason": "补全具体对象（Maple 设计岗位）和持续目标（调研要求、整理经验匹配），使用调研类别，建立标准结构。",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.47,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 603,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4325,
+        "total_cost_usd": 0.011668
+      }
+    },
+    {
+      "case": "具体日期保留",
+      "action": "rename",
+      "title": "📅 9月20日路演｜日程与待办",
+      "reason": "补充缺失的「｜」分隔符，用具体日期和事件作对象，改用日程类别 emoji 反映工作性质。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.66,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 570,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4318,
+        "total_cost_usd": 0.011489
+      }
+    },
+    {
+      "case": "提示注入是数据",
+      "action": "rename",
+      "title": "🧩 邮箱注册｜排查问题",
+      "reason": "用户明确要求排查邮箱注册问题，符合工具开发类别。遵循原始目标的基本对象\"邮箱注册\"，以近期实际需求\"排查\"作为持续目标，去掉不准确的\"修复\"预判。",
+      "passed": true,
+      "errors": [],
+      "seconds": 4.47,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 186,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4355,
+        "total_cost_usd": 0.009643
+      }
+    },
+    {
+      "case": "冲突靠内容区分",
+      "action": "rename",
+      "title": "🎬 Orion 评测视频｜重新发布",
+      "reason": "补充具体内容主题 Orion，区分泛泛的视频发布；突出评测视频这一核心对象。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.55,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 559,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4347,
+        "total_cost_usd": 0.011492
+      }
+    },
+    {
+      "case": "同项目页面区分",
+      "action": "rename",
+      "title": "🎨 课程详情页｜加载性能优化",
+      "reason": "用户明确请求优化课程详情页加载性能。对象为页面模块，目标为性能优化。调整为符合标准结构。",
+      "passed": true,
+      "errors": [],
+      "seconds": 4.14,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 149,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4320,
+        "total_cost_usd": 0.009388
+      }
+    },
+    {
+      "case": "内容与工具区分",
+      "action": "rename",
+      "title": "🧩 video-publisher｜字幕裁剪修复",
+      "reason": "用户转向修复具名工具video-publisher的字幕裁剪逻辑，从泛的发布任务聚焦到具体的工程问题。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.87,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 523,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4330,
+        "total_cost_usd": 0.011278
+      }
+    },
+    {
+      "case": "Monorepo子项目",
+      "action": "rename",
+      "title": "🧩 seller-console｜订单导出超时修复",
+      "reason": "原标题过于宽泛。用户明确指出在 commerce-suite monorepo 下修复 seller-console 子项目的订单导出超时问题，需调整为具体的模块和目标。",
+      "passed": true,
+      "errors": [],
+      "seconds": 4.17,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 164,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4350,
+        "total_cost_usd": 0.009523
+      }
+    },
+    {
+      "case": "桌面修改子项目",
+      "action": "rename",
+      "title": "🧩 Maple 登录重定向｜循环修复",
+      "reason": "原标题过于通用，不能指示具体工作对象。根据原始目标确立对象（Maple 登录重定向）与持续目标（循环修复），采用工具开发类别。",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.54,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 500,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4343,
+        "total_cost_usd": 0.011189
+      }
+    },
+    {
+      "case": "跨项目同步",
+      "action": "rename",
+      "title": "🧩 邮箱注册校验｜跨项目同步",
+      "reason": "用户明确需求是同步 Maple 和 Cedar 两个项目的邮箱注册校验。目标是跨项目同步，去掉项目名前缀避免重复，突出具体模块与同步目标。",
+      "passed": false,
+      "errors": [
+        "缺少对象：Cedar"
+      ],
+      "seconds": 3.82,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 175,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4345,
+        "total_cost_usd": 0.009568
+      }
+    },
+    {
+      "case": "内容模型名称保留",
+      "action": "rename",
+      "title": "🔎 H3 / H3 Max｜推理编码性能评测",
+      "reason": "当前标题过于泛泛，缺少具体对象和明确目标。根据用户需求，对比两个具体模型的性能准备评测选题，用对比调研类别。",
+      "passed": true,
+      "errors": [],
+      "seconds": 8.29,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 511,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4347,
+        "total_cost_usd": 0.011252
+      }
+    },
+    {
+      "case": "旧标题迁移保留主线",
+      "action": "rename",
+      "title": "🧩 邮箱注册｜修复",
+      "reason": "旧标题使用过时图标 🛠️，缺少「｜」分隔符。格式迁移为新规范，主线不变。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.45,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 616,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4316,
+        "total_cost_usd": 0.011715
+      }
+    },
+    {
+      "case": "视频修复仍属内容",
+      "action": "rename",
+      "title": "🎬 Orion 评测视频｜结尾黑帧修正",
+      "reason": "原标题是泛性产物描述，未体现持续工作的具体目标。用户明确指出要修正结尾黑帧并继续制作，这是当前主线。调整为标准结构：emoji + 对象 + ｜ + 目标。",
+      "passed": true,
+      "errors": [],
+      "seconds": 4.66,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 189,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4357,
+        "total_cost_usd": 0.009662
+      }
+    },
+    {
+      "case": "工具修复不归视频",
+      "action": "rename",
+      "title": "🧩 clip-helper｜字幕裁剪修复",
+      "reason": "迁移旧图标 🛠️ 为 🧩，补齐结构分隔符｜，调整为「对象｜目标」格式。",
+      "passed": true,
+      "errors": [],
+      "seconds": 10.29,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 592,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4348,
+        "total_cost_usd": 0.011659
+      }
+    },
+    {
+      "case": "方法整理不归页面设计",
+      "action": "rename",
+      "title": "📝 页面还原｜方法整理",
+      "reason": "原标题缺少「｜」分隔符，类别应为📝方法整理而非🎨设计。重构为对象+目标结构。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.28,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 519,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4340,
+        "total_cost_usd": 0.011278
+      }
+    },
+    {
+      "case": "内容对象前置",
+      "action": "rename",
+      "title": "🔎 Atlas 与 Atlas Pro｜编码表现对比",
+      "reason": "补全缺失的「｜」分隔符，将动作词\"对比\"移至目标侧，形成标准结构。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.18,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 507,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4331,
+        "total_cost_usd": 0.0112
+      }
+    },
+    {
+      "case": "无分隔符迁移不扩写",
+      "action": "rename",
+      "title": "🎨 登录表单｜设计",
+      "reason": "补充「｜」分隔符，调整为标准结构。对象与目标准确，类别与主线保持不变。",
+      "passed": true,
+      "errors": [],
+      "seconds": 9.47,
+      "usage": {
+        "input_tokens": 3,
+        "output_tokens": 546,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 4311,
+        "total_cost_usd": 0.011355
+      }
+    }
+  ]
+}
