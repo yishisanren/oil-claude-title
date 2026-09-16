@@ -1,5 +1,7 @@
 # oil-claude-title
 
+[![跨平台验证](https://github.com/yishisanren/oil-claude-title/actions/workflows/test.yml/badge.svg)](https://github.com/yishisanren/oil-claude-title/actions/workflows/test.yml)
+
 让 Claude Code 的会话标题跟上你正在做的事情。每轮对话结束后，后台自动参考最近 3～5 轮内容更新标题；会话再多，也更容易在 `/resume` 列表和侧边栏里找回。
 
 本项目移植自 [oil-oil/oil-codex-title](https://github.com/oil-oil/oil-codex-title)（MIT），命名规则、标题结构与保护逻辑保持一致，宿主接口换成了 Claude Code 的 Stop Hook、会话记录和 headless 模式。
@@ -58,7 +60,7 @@ claude plugin install oil-claude-title@oil-claude-title
 
 ## 现状与边界
 
-- macOS + Claude Code 2.1.266 实测：Hook 真实触发、后台命名、标题写入并被后续轮次沿用。Linux 与 Windows 只有单元测试覆盖，未实测。
+- macOS + Claude Code 2.1.266 实测：Hook 真实触发、后台命名、标题写入并被后续轮次沿用。Linux 与 Windows 只有 GitHub Actions 上的单元测试覆盖（macOS 3.9/3.13、Ubuntu、Windows 均通过），未在真实 Claude Code 里实测。
 - 桌面版（Claude Desktop）侧边栏按自己的缓存显示，并会在下一轮提问时把缓存标题写回记录，所以后台自动改名在桌面会话里不会体现到侧边栏；在会话里执行 `/oil-title apply` 会同时写入记录并同步桌面缓存。`/resume` 列表按会话记录读取，会显示新标题。
 - `claude -p` 一次性会话在打印结果后立即退出，异步 Hook 来不及完成，不会被命名；交互式会话不受影响。
 - 云端会话、远程存储后端不支持。原版的闲置话题归档功能没有移植：Claude Code 没有对应的归档接口。
